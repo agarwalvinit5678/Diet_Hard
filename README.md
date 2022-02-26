@@ -35,13 +35,34 @@ Thus, we have categorized the Indian dishes into local,  regional dishes. The us
 
 4 . Whether it's due to diet requirements, limited time for cooking, or just a desire to keep things simple, recurring dishes allow you to put your favorite foods and meals on repeat.
 
+# Get Started
+
+How to start the website:-
+In the project directory, you can run:
+
+`npm i`
+This will install all required node modules.
+
+then you can run,
+
+`node app.js`
+This will start the website on local server port 3000.
+
+Using nodemon is recommended if you are a developer.
+
+Now open `http://localhost:3000` to view it in the browser.
+
+The page will reload if you make edits.
+This might not run from the repo as .env is ignored.
+You can generate your Google Client Id and Google Client Secret and put it in .env file and the project will run perfectly.
+
 
 # Tech Behind it
 
 ### frontend
 1. HTML, CSS, Bootstrap for layout and styling.
 2. EJS for embedding Javascript
-3. JavaScript and JQuery for adding client side functionalit
+3. JavaScript and JQuery for adding client side functionalities
 
 ### backend 
 1. NodeJS and Express.js . to create server-side logic for the website and create server routes.
