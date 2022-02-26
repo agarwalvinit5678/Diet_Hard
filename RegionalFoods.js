@@ -33,6 +33,27 @@ var regionalFoodItems= {
                 fats        :   25
 
             },
+            ghatwiKebab : 
+            {
+                name        :   "ghatwi kebab",
+                calories    :   400,
+                servingSize :   48,
+                protein     :   4,
+                carbs       :   19,
+                fats        :   25
+
+            },
+            botiKebab : 
+            {
+                name        :   "boti kebab",
+                calories    :   400,
+                servingSize :   48,
+                protein     :   4,
+                carbs       :   19,
+                fats        :   25
+
+            },
+            
             shahiKorma :
             {
                 name        :   "shahi korma",
@@ -43,6 +64,52 @@ var regionalFoodItems= {
                 fats        :   3
 
             }, 
+            biryani:
+            {
+                name        :   "dum biryani",
+                calories    :   400,
+                servingSize :   300,
+                protein     :   20,
+                carbs       :   50,
+                fats:    13
+
+            },
+            muttonbiryani:
+            {
+                name        :   "mutton biryani",
+                calories    :   321,
+                servingSize :   200,
+                protein     :   20,
+                carbs       :   20,
+                fats:    20
+
+            },
+            tundeKeKebab:{
+                calories    :   263,
+                servingSize :   31,
+                protein     :   18,
+                carbs       :   3,
+                fats :    20
+            },
+            pasandaKebab:{
+                calories    :   120,
+                servingSize :   20,
+                protein     :   10,
+                carbs       :   5,
+                fats        :   5
+
+            },
+            navratanKorma : 
+            {
+                name        :   "navratan korma",
+                calories    :   124,
+                servingSize :   24,
+                protein     :   3,
+                carbs       :   15,
+                fats        :   6
+
+            },
+
         },
         breads:{
             naan : 
