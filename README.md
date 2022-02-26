@@ -1,8 +1,4 @@
-Idea Documentation
-https://trello.com/b/SipBkVBx/dotslash-50
 
-Youtube Demo
-https://youtu.be/9Qsz2jLlgRM
 
 #Our First Hackathon as Freshers
 
