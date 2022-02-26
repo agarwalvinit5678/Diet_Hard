@@ -92,11 +92,14 @@ app.get('/auth/google/DietHard',
     // Successful authentication, redirect home.
     res.redirect('/');
   });
+
+  //Home
 app.get("/",function(req,res){
  
 res.render("home",{login_value:req.isAuthenticated()});
 });
 
+  //Register
 
 app.post("/register",function(req,res){
         
@@ -111,6 +114,7 @@ app.post("/register",function(req,res){
   }
   });
   });
+  //Login
   
   app.post("/login",function(req,res){
   const user=new User({
@@ -131,6 +135,9 @@ app.post("/register",function(req,res){
   })
   });
 
+  //Diary
+
+
   app.get("/diary",function(req,res){
     if(req.isAuthenticated()){
         
@@ -143,6 +150,19 @@ app.post("/register",function(req,res){
     });
 
 
+    //Goals
+    app.get("/goal",function(req,res){
+      if(req.isAuthenticated()){
+        
+        res.render("goal",{login_value:req.isAuthenticated(),protein:req.user.protein,carbohydrate:req.user.carbohydrate,fat:req.user.fat});
+      }
+      else{
+        res.redirect("/");
+      }    
+      
+      });
+
+    //Logout
   app.get('/logout', function(req, res){
     req.logout();
     res.redirect('/');
