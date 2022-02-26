@@ -141,6 +141,10 @@ app.post("/register",function(req,res){
     }    
       
     });
+        app.get("/lessons",function(req,res){
+          res.render("lessons",{login_value:req.isAuthenticated()});
+          
+        });
 
 
   app.get('/logout', function(req, res){
