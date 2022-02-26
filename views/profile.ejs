@@ -1,0 +1,197 @@
+<%- include('partials/header') %>  
+
+
+<body style="background-color:#D5EEBB;">
+ 
+<body class="imgbg" background="images/bgg.png"  >
+
+
+
+<img class="mug med" src="turtle/mug.png" />
+<img class="t3 med" src="turtle/t3.png" />
+
+<div class="nav2 nav2profile">
+  <ul>
+    <li class="sidebutton gbutton"><button id="logout" onclick="window.location.href='logout'"  type="button">Logout</button></li>
+</ul></div>
+<section id="details" class="details">
+
+  <div class="col-xl-9 order-xl-1">
+       <div class="card profilecard  shadow">
+         <div class="card-header bg-white border-0">
+           <div class="row align-items-center">
+             <div class="col-8">
+               <h3 class="mb-0">My account</h3>
+             </div>
+           </div>
+         </div>
+         <div class="card-body bgcard">
+           <form name="profile" method="POST" action="/profile">
+             <div class="pl-lg-4">
+               <div class="row">
+                 <div class="col-lg-6 ">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-name" required>Name</label>
+                     <input type="text" id="input-username" class="form-control form-control-alternative" name="name" placeholder="Name" value="<%= name %> ">
+                   </div>
+                 </div>
+                 <div class="col-lg-6 ">
+                   <div class="form-group">
+                     <label class="form-control-label" for="input-email" required>Email address</label>
+                     <input type="email" id="input-email" class="form-control form-control-alternative" name="username" placeholder="example@domain.com" value="<%= email %> ">
+                   </div>
+                 </div>
+               </div>
+               
+             </div>
+             <hr class="my-4">
+             
+
+            
+               <div class="row">
+                
+          <div class="col-md-3 col-xs-6">
+            <div class="form-group focused">
+              <label class="form-control-label" for="input-cuisine">Cuisine</label>
+              <!--- India states -->
+                <select class="dropdownlist" id="" name="cuisine" value="<%cuisine%>" required>
+                <option  <%= cuisine == "" ? 'selected' : ''%> value="">Select</option>
+                <option <%= cuisine == "awadhi" ? 'selected' : ''%> value="awadhi">Awadhi</option>
+                <option <%= cuisine == "bhojpuri" ? 'selected' : ''%> value="bhojpuri">Bhojpuri</option>
+                <option <%= cuisine == "kashmiri" ? 'selected' : ''%> value="kashmiri">Kashmiri</option>
+                <option <%= cuisine == "rajisthani" ? 'selected' : ''%> value="rajisthani">Rajasthani</option>
+                <option <%= cuisine == "hyderabadi" ? 'selected' : ''%> value="hyderabadi">Hyderabadi</option>
+                <option <%= cuisine == "udupi" ? 'selected' : ''%> value="udupi">Udupi</option>
+                <option <%= cuisine == "goan" ? 'selected' : ''%> value="goan">Goan</option>
+                <option <%= cuisine == "bengali" ? 'selected' : ''%> value="bengali">Bengali</option>
+                <option <%= cuisine == "maharashtrian" ? 'selected' : ''%> value="maharashtrian">Maharashtrian</option>
+                <option <%= cuisine == "assamesse" ? 'selected' : ''%> value="assamesse">Assamesse</option>
+                <option <%= cuisine == "manipuri" ? 'selected' : ''%> value="manipuri">Manipuri</option>
+                </select>
+            </div>
+        </div>
+       
+      <div class="col-md-2 col-xs-6">
+        <div class="form-group focused">
+          <label class="form-control-label" for="input-goal">Goal</label>
+         
+            <select class="dropdownlist"  name="goal" value="<%goal%>" required>
+            <option  <%= goal == "" ? 'selected' : ''%> value="">Select</option>
+            <option <%= goal == "retain" ? 'selected' : ''%> value="retain">Retain</option>
+            <option <%= goal == "gain" ? 'selected' : ''%> value="gain">Gain</option>
+            <option <%=goal == "lose" ? 'selected' : ''%> value="lose">Lose</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-3 col-xs-6">
+      <div class="form-group focused">
+        <label class="form-control-label" for="input-split" >Split</label>
+       
+          <select class="dropdownlist"  name="split" value="<%split%>" required>
+          <option  <%= split == "" ? 'selected' : ''%> value="">Select</option>
+          <option <%= split == "standard" ? 'selected' : ''%> value="standard">Standard Split</option>
+          <option <%= split == "protein" ? 'selected' : ''%> value="protein">High Protein</option>
+          <option <%=split == "carbohydrate" ? 'selected' : ''%> value="carbohydrate">Low Carb</option>
+          </select>
+      </div>
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <div class="form-group focused">
+      <label class="form-control-label" for="input-activitylevel">Activity Level</label>
+      
+        <select class="dropdownlist"  name="activitylevel" value="<%activitylevel%>" required>
+        <option  <%= activitylevel == "" ? 'selected' : ''%> value="">Select</option>
+        <option <%= activitylevel == "sedentary" ? 'selected' : ''%> value="sedentary">Sedentary</option>
+        <option <%= activitylevel == "lightlyactive" ? 'selected' : ''%> value="lightlyactive">Lightly Active</option>
+        <option <%= activitylevel == "moderatelyactive" ? 'selected' : ''%> value="moderatelyactive">Moderately Active</option>
+        <option <%= activitylevel == "veryactive" ? 'selected' : ''%> value="veryactive">Very Active</option>
+        <option <%= activitylevel == "extraactive" ? 'selected' : ''%> value="extraactive">Extra Active</option>
+        </select>
+    </div>
+</div>
+</div>
+              
+                <hr class="my-4">
+               <div class="row">
+                 <div class="col-lg-3 col-xs-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-city">Height</label>
+                     <input type="number" id="input-city" class="form-control form-control-alternative" required name="height" placeholder="Height (cms)" value=<%=height%>>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 col-xs-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-country">Weight</label>
+                     <input type="number" id="input-country" class="form-control form-control-alternative" required name="weight" placeholder="Weight (kg)" name="weight" value=<%= weight %>>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 col-xs-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-age">Age</label>
+                     <input type="number" id="input-age" class="form-control form-control-alternative" required name="age"placeholder="Age(years)" value=<%=age%>>
+                   </div>
+                 </div>
+
+        <div class="col-lg-3 col-xs-6 ">
+          <div class="form-group focused">
+            <label class="form-control-label" for="input-city"  >Gender</label>
+            <!--- Gender -->
+            <select class="dropdownlist" name="gender" value="<%= gender %>" required>
+              <option <%= gender == "" ? 'selected' : ''%> value="">Select</option>
+              <option <%= gender == "M" ? 'selected' : ''%> value="M">Male</option>
+              <option <%= gender == "F" ? 'selected' : ''%> value="F">Female</option>
+              <option <%= gender == "O" ? 'selected' : ''%> value="O">Other</option>
+
+            </select>
+          </div>
+        </div>
+
+
+               </div>
+                 <hr class="my-4">
+                 
+                <label class="form-control-label" for="input-city">Common Allergies</label>
+               <div class="list-group list-group-horizontal-md">
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("Gluten") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Gluten">
+                   Gluten
+                 </label>
+
+                 <label class="list-group-item">
+                  <input <%= allergens.includes("Eggs") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Eggs">
+                  Eggs
+                </label>
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("Fish") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Fish">
+                   Fish
+                 </label>
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("Nuts") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Nuts">
+                  Nuts
+                 </label>
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("Dairy") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Dairy">
+                  Dairy
+                 </label>
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("Soy") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="Soy">
+                  Soy
+                 </label>
+                 <label class="list-group-item">
+                   <input <%= allergens.includes("ShellFish") ? 'checked' : ''%> class="form-check-input me-1" name="allergens" type="checkbox" value="ShellFish">
+                   Shell Fish
+                 </label>
+               </div>
+               
+             </div>
+             <button class="submit-form-btn" type="submit"> Submit</button>
+               </form>
+               
+         </div>
+         
+
+       </div>
+     </div>
+    
+<section>
+  <%- include('partials/footer') %>  

@@ -145,7 +145,75 @@ app.post("/register",function(req,res){
           res.render("lessons",{login_value:req.isAuthenticated()});
           
         });
-
+app.get("/profile",function(req,res){
+    if(req.isAuthenticated()){
+        
+        res.render("profile",{goal:req.user.goal,split:req.user.split,name:req.user.name,weight:req.user.weight,height:req.user.height,age:req.user.age,email:req.user.username,cuisine:req.user.cuisine,gender:req.user.gender,allergens:req.user.allergens,activitylevel:req.user.activitylevel,login_value:req.isAuthenticated()});
+    }
+    else{
+        res.redirect("/");
+    }    
+    
+    });
+app.post("/profile",function(req,res){
+        console.log(req.body.gender);
+       
+        if(req.body.allergens==undefined)
+        var allerging=[];
+        else 
+        var allerging=req.body.allergens;
+        var Bmr=0;
+        if(req.user.gender=="M")
+        {
+          Bmr=88.262+(13.397*req.user.weight)+(4.799*req.user.height)-(5.677*req.user.age);
+        }
+        else
+        {
+           Bmr=447.593+(9.247*req.user.weight)+(3.098*req.user.height)-(4.330*req.user.age);
+        }
+      
+        if(req.body.activitylevel=="sedentary")
+        var activitymultiplier=1.200;
+        else if(req.body.activitylevel=="lightlyactive")
+        var activitymultiplier=1.375;
+        else if(req.body.activitylevel=="moderatelyactive")
+        var activitymultiplier=1.550;
+        else if(req.body.activitylevel=="veryactive")
+        var activitymultiplier=1.725;
+        else if(req.body.activitylevel=="extraactive")
+        var activitymultiplier=1.900;
+      
+        if(req.body.goal=="retain")
+        var goalscenario=1.000;
+        else if(req.body.goal=="gain")
+        var goalscenario=1.100;
+        else if(req.body.goal=="lose")
+        var goalscenario=0.900;
+        var Pdct=parseInt((Bmr*activitymultiplier)*goalscenario);
+        if(req.body.split=="standard")
+        {var Protein = Pdct * 0.25;
+        var Carbohydrate = Pdct * 0.45;
+        var Fat = Pdct * 0.30;}
+        else if(req.body.split=="protein")
+        {var Protein = Pdct * 0.40;
+        var Carbohydrate = Pdct * 0.35;
+        var Fat = Pdct * 0.25;}
+        else if(req.body.split=="carbohydrate")
+        {var Protein = Pdct * 0.35;
+        var Carbohydrate = Pdct * 0.10;
+        var Fat = Pdct * 0.55;}
+        User.findOneAndUpdate({_id:req.user._id}, {split:req.body.split,goal:req.body.goal,name:req.body.name,activitylevel:req.body.activitylevel,weight:req.body.weight,height:req.body.height,age:req.body.age,email:req.body.username,cuisine:req.body.cuisine,gender:req.body.gender,allergens:allerging,username:req.body.username, bmr:Bmr,pdct:Pdct,protein:Protein,carbohydrate:Carbohydrate,fat:Fat},{new:true}, function(err, doc) {
+          if(err) return console.log(err);});
+        // req.user.name=req.body.name;
+        
+        //console.log(bmr);
+         //console.log(req.body.allergens);
+         console.log(res.user);
+      res.redirect("/profile");
+      
+      });
+        
+        
 
   app.get('/logout', function(req, res){
     req.logout();
