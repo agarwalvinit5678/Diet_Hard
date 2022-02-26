@@ -41,7 +41,7 @@ Thus, we have categorized the Indian dishes into local,  regional dishes. The us
 ### frontend
 1. HTML, CSS, Bootstrap for layout and styling.
 2. EJS for embedding Javascript
-3. JavaScript and JQuery for adding client side functionalit
+3. JavaScript and JQuery for adding client side functionalities
 
 ### backend 
 1. NodeJS and Express.js . to create server-side logic for the website and create server routes.
