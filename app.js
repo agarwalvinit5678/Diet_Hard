@@ -74,7 +74,7 @@ passport.use(new GoogleStrategy({
 
 function(accessToken, refreshToken, profile, cb) {
   console.log(profile);
-  User.findOrCreate({ googleId: profile.id,name:profile.displayName, }, function (err, user) {
+  User.findOrCreate({ googleId: profile.id,name:profile.displayName }, function (err, user) {
     return cb(err, user);
   });
 }
@@ -130,6 +130,19 @@ app.post("/register",function(req,res){
       }
   })
   });
+
+  app.get("/diary",function(req,res){
+    if(req.isAuthenticated()){
+        
+      res.render("diary",{login_value:req.isAuthenticated()});
+    }
+    else{
+      res.redirect("/");
+    }    
+      
+    });
+
+
   app.get('/logout', function(req, res){
     req.logout();
     res.redirect('/');
