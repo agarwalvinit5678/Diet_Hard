@@ -1,8 +1,32 @@
 #### The Live Demo for our project - https://www.loom.com/share/1f317932086a4252a17842444cf0f849
 
 #Our First Hackathon as Freshers
+#Team Details
+Team Name :Terrific Trio
+IsFresher:True
 
-![Screenshot_79](https://user-images.githubusercontent.com/96020697/155879666-904b047e-801a-4c4a-9d02-fd7c2280d2d7.png)
+
+# Get Started
+
+How to start the website:-
+In the project directory, you can run:
+
+`npm i`
+This will install all required node modules.
+
+then you can run,
+
+`node app.js`
+This will start the website on local server port 3000.
+
+Using nodemon is recommended if you are a developer.
+
+Now open `http://localhost:3000` to view it in the browser.
+
+The page will reload if you make edits.
+This might not run from the repo as .env is ignored.
+You can generate your Google Client Id and Google Client Secret and put it in .env file and the project will run perfectly.
+
 
 # The Problem Die.t_HARD solves 
 
@@ -33,30 +57,6 @@ Thus, we have categorized the Indian dishes into local,  regional dishes. The us
 
 4 . Whether it's due to diet requirements, limited time for cooking, or just a desire to keep things simple, recurring dishes allow you to put your favorite foods and meals on repeat.
 
-![Screenshot_81](https://user-images.githubusercontent.com/96020697/155879691-6a651fb7-153a-40eb-a225-3c150b2134ed.png)
-
-# Get Started
-
-How to start the website:-
-In the project directory, you can run:
-
-`npm i`
-This will install all required node modules.
-
-then you can run,
-
-`node app.js`
-This will start the website on local server port 3000.
-
-Using nodemon is recommended if you are a developer.
-
-Now open `http://localhost:3000` to view it in the browser.
-
-The page will reload if you make edits.
-This might not run from the repo as .env is ignored.
-You can generate your Google Client Id and Google Client Secret and put it in .env file and the project will run perfectly.
-
-![Screenshot_82](https://user-images.githubusercontent.com/96020697/155879702-3e9bad58-a1a7-45eb-9a40-abd381d149b2.png)
 
 # Tech Behind it
 
@@ -75,7 +75,12 @@ You can generate your Google Client Id and Google Client Secret and put it in .e
 
 ### Research Paper utiised to get nutrient data for the Indian North East region.
 1. As easily available data for food in the north east region is scarce , we utilised the content and findings of the following research paper to retrieve the data for the assamese cuisine in RegionalFoods.js 
+
 [Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf](https://github.com/agarwalvinit5678/Diet_Hard/files/8147817/Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf)
 
+
+![Screenshot_79](https://user-images.githubusercontent.com/96020697/155879666-904b047e-801a-4c4a-9d02-fd7c2280d2d7.png)
+![Screenshot_81](https://user-images.githubusercontent.com/96020697/155879691-6a651fb7-153a-40eb-a225-3c150b2134ed.png)
+![Screenshot_82](https://user-images.githubusercontent.com/96020697/155879702-3e9bad58-a1a7-45eb-9a40-abd381d149b2.png)
 
 
