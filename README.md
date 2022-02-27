@@ -2,6 +2,8 @@
 
 #Our First Hackathon as Freshers
 
+![Screenshot_79](https://user-images.githubusercontent.com/96020697/155879666-904b047e-801a-4c4a-9d02-fd7c2280d2d7.png)
+
 # The Problem Die.t_HARD solves 
 
 ### People belonging to the Indian middle-aged urban demographic, are more often than not, unable to choose and maintain their diet plan resolutions to achieve personal fitness goals which leads them to stop making conscious effort on their diet altogether and relapsing back to their previous unhealthier diet.
@@ -31,6 +33,8 @@ Thus, we have categorized the Indian dishes into local,  regional dishes. The us
 
 4 . Whether it's due to diet requirements, limited time for cooking, or just a desire to keep things simple, recurring dishes allow you to put your favorite foods and meals on repeat.
 
+![Screenshot_81](https://user-images.githubusercontent.com/96020697/155879691-6a651fb7-153a-40eb-a225-3c150b2134ed.png)
+
 # Get Started
 
 How to start the website:-
@@ -52,6 +56,7 @@ The page will reload if you make edits.
 This might not run from the repo as .env is ignored.
 You can generate your Google Client Id and Google Client Secret and put it in .env file and the project will run perfectly.
 
+![Screenshot_82](https://user-images.githubusercontent.com/96020697/155879702-3e9bad58-a1a7-45eb-9a40-abd381d149b2.png)
 
 # Tech Behind it
 
@@ -71,3 +76,6 @@ You can generate your Google Client Id and Google Client Secret and put it in .e
 ### Research Paper utiised to get nutrient data for the Indian North East region.
 1. As easily available data for food in the north east region is scarce , we utilised the content and findings of the following research paper to retrieve the data for the assamese cuisine in RegionalFoods.js 
 [Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf](https://github.com/agarwalvinit5678/Diet_Hard/files/8147817/Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf)
+
+
+
