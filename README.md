@@ -80,7 +80,11 @@ Thus, we have categorized the Indian dishes into local,  regional dishes. The us
 
 
 ![Screenshot_79](https://user-images.githubusercontent.com/96020697/155879666-904b047e-801a-4c4a-9d02-fd7c2280d2d7.png)
+![Screenshot (84)](https://user-images.githubusercontent.com/92209640/155890269-ee02c6d7-fd78-44c6-809f-9498ef093299.png)
+![Screenshot (80)](https://user-images.githubusercontent.com/92209640/155890285-bd31946b-9f35-407d-9d58-8383aa68c9ec.png)
 ![Screenshot_81](https://user-images.githubusercontent.com/96020697/155879691-6a651fb7-153a-40eb-a225-3c150b2134ed.png)
 ![Screenshot_82](https://user-images.githubusercontent.com/96020697/155879702-3e9bad58-a1a7-45eb-9a40-abd381d149b2.png)
+
+
 
 
