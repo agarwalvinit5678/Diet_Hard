@@ -67,3 +67,7 @@ You can generate your Google Client Id and Google Client Secret and put it in .e
 
 #### API
 1. fatSecret Javascript API. used for user personalized diary section.
+
+### Research Paper utiised to get nutrient data for the Indian North East region.
+1. As easily available data for food in the north east region is scarce , we utilised the content and findings of the following research paper to retrieve the data for the assamese cuisine in RegionalFoods.js 
+[Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf](https://github.com/agarwalvinit5678/Diet_Hard/files/8147817/Nutrient_Composition_of_Some_Regional_Recipes_of_A.pdf)
