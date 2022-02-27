@@ -65,7 +65,7 @@ You can generate your Google Client Id and Google Client Secret and put it in .e
 2. MongoDB Atlas is used as database.
 3. OAuth 2.0 (Passport.js). For user authentication. 
 
-#### API
+### API
 1. fatSecret Javascript API. used for user personalized diary section.
 
 ### Research Paper utiised to get nutrient data for the Indian North East region.
