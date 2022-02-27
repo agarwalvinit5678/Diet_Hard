@@ -64,7 +64,7 @@ var regionalFoodItems= {
                 fats        :   3
 
             }, 
-            biryani:
+            dumBiryani:
             {
                 name        :   "dum biryani",
                 calories    :   400,
@@ -210,6 +210,47 @@ var regionalFoodItems= {
                 fats        :   9
 
             },
+            alooChokha : 
+            {
+                name        :   "aloo chokha",
+                calories    :   100,
+                servingSize :   75,
+                protein     :   1,
+                carbs       :   2,
+                fats        :   2
+
+            },
+            dalMakhani : 
+            {
+                name        :   "dal makhani",
+                calories    :   50,
+                servingSize :   30,
+                protein     :   1,
+                carbs       :   2,
+                fats        :   4
+
+            },
+            alooMatarShorba : 
+            {
+                name        :   "rajma",
+                calories    :   220,
+                servingSize :   300,
+                protein     :   6,
+                carbs       :   50,
+                fats        :   9
+
+            },
+            muttonBiryani:
+            {
+                name        :   "mutton biryani",
+                calories    :   400,
+                servingSize :   300,
+                protein     :   20,
+                carbs       :   50,
+                fats:    13
+
+            },
+
         },
         breads:{
             naan :  
@@ -302,6 +343,61 @@ var regionalFoodItems= {
                 fats        :    30
 
             },
+            chickenBiryani:
+            {
+                name        :   "chicken biryani",
+                calories    :   400,
+                servingSize :   300,
+                protein     :   20,
+                carbs       :   50,
+                fats:    13
+
+            },
+            riste:
+            {
+                name        :   "riste",
+                calories    :   70,
+                servingSize :   100,
+                protein     :   1,
+                carbs       :   4,
+                fats:    4
+
+            },
+            chickenBiryani:
+            {
+                name        :   "chicken biryani",
+                calories    :   400,
+                servingSize :   300,
+                protein     :   20,
+                carbs       :   50,
+                fats:    13
+
+            },
+            roganJosh:{
+                name        :   "rogan josh",
+                calories    :   70,
+                servingSize :   100,
+                protein     :   1,
+                carbs       :   7,
+                fats:    3
+            },
+            tailithKokur :{
+                name        :   "talith kokur",
+                calories    :   300,
+                servingSize :   100,
+                protein     :   16,
+                carbs       :   17,
+                fats:    18
+            },
+            muttonQaliya :{
+                name        :   "mutton qaliya",
+                calories    :   150,
+                servingSize :   270,
+                protein     :   13,
+                carbs       :   20,
+                fats:    17
+            },
+
         },
         breads:{
             naan : 
@@ -392,6 +488,66 @@ var regionalFoodItems= {
                 fats:    17
 
             }, 
+            daalTadke: 
+            {
+                name        :   "daal tadka" ,
+                calories    :   180,
+                servingSize :   140,
+                protein     :   9,
+                carbs       :   22,
+                fats:    6
+
+            }, 
+            sevTamatar: 
+            {
+                name        :   "sev tamatar" ,
+                calories    :   150,
+                servingSize :   400,
+                protein     :   7,
+                carbs       :   31,
+                fats:    2
+
+            }, 
+            dalMakhani : 
+            {
+                name        :   "dal makhani",
+                calories    :   50,
+                servingSize :   30,
+                protein     :   1,
+                carbs       :   2,
+                fats        :   4
+
+            },
+            gatteKiSabji: 
+            {
+                name        :   "gatte ki sabji " ,
+                calories    :   85,
+                servingSize :   75,
+                protein     :   3,
+                carbs       :   8,
+                fats:    4
+
+            }, 
+            mogarKiSabji: 
+            {
+                name        :   "mogar ki sabji" ,
+                calories    :   120,
+                servingSize :   27,
+                protein     :   7,
+                carbs       :   18,
+                fats        :   2
+
+            }, 
+            gatteMatarKhichidi: 
+            {
+                name        :   "gatte matar khichidi" ,
+                calories    :   200,
+                servingSize :   200,
+                protein     :   4,
+                carbs       :   35,
+                fats:    4
+
+            }, 
         },
         breads:{
             chapati : 
@@ -441,6 +597,44 @@ var regionalFoodItems= {
                 protein     :   12,
                 carbs       :   50,
                 fats:    2
+
+            },
+            seekhKebab: {
+                name        :    "seekh kebab",
+                calories    :   263,
+                servingSize :   31,
+                protein     :   18,
+                carbs       :   3,
+                fats :    20
+
+            }
+            ,
+            roganJosh:{
+                name        :   "rogan josh",
+                calories    :   70,
+                servingSize :   100,
+                protein     :   1,
+                carbs       :   7,
+                fats:    3
+            },
+            lukhmi:
+            {
+                name        :   "lukhmi",
+                calories    :   100,
+                servingSize :   70,
+                protein     :   20,
+                carbs       :   1,
+                fats:    5
+
+            },
+            murtabaak:
+            {
+                name        :   "murtabaak",
+                calories    :   675,
+                servingSize :   175,
+                protein     :   12,
+                carbs       :   30,
+                fats:    56
 
             },
             patharKaGhosht :
@@ -551,6 +745,51 @@ var regionalFoodItems= {
                 fats:    1
 
             },
+            neerDosa :{
+                name        :   "neer dosa",
+                calories    :   80,
+                servingSize :   400,
+                protein     :   1,
+                carbs       :   17,
+                fats:    1
+
+            },
+            vada :{
+                name        :   "vada",
+                calories    :   60,
+                servingSize :   120,
+                protein     :   2,
+                carbs       :   12,
+                fats:    6
+
+            },
+            paneerDosa :{
+                name        :   "paneer dosa",
+                calories    :   180,
+                servingSize :   100,
+                protein     :   7,
+                carbs       :   28,
+                fats:    3
+
+            },
+            chitrana :{
+                name        :   "chitrana",
+                calories    :   175,
+                servingSize :   125,
+                protein     :   4,
+                carbs       :   38,
+                fats:    1
+
+            },
+            kudubu:{
+                name        :   "kudubu",
+                calories    :   180,
+                servingSize :   70,
+                protein     :   2,
+                carbs       :   32,
+                fats:    6
+
+            },
         },
         breads:{
             dosa :
@@ -607,6 +846,35 @@ var regionalFoodItems= {
                 protein     :   18,
                 carbs       :   3,
                 fats:    20
+
+            },
+            pompretCurry : 
+            {
+                name        :   "pompret curry",
+                calories    :   164,
+                servingSize :   200,
+                protein     :   20,
+                carbs       :   1,
+                fats:    3
+
+            },
+            prawnsCurry : 
+            {
+                name        :   "prawns curry",
+                calories    :   85,
+                servingSize :   85,
+                protein     :   21,
+                carbs       :   1,
+                fats:    1
+
+            },
+            ilishCurry:{
+                name        :   "ilish curry",
+                calories    :   300,
+                servingSize :   100,
+                protein     :   25,
+                carbs       :   2,
+                fats:    22
 
             },
             rasgulla : 
@@ -815,6 +1083,57 @@ var regionalFoodItems= {
                 fats:    25
 
             },
+            prawnPulao : 
+            {
+                name        :   "prawns pulao",
+                calories    :   500,
+                servingSize :   300,
+                protein     :   50,
+                carbs       :   50,
+                fats:    8
+
+            },
+             bhindiMasala: 
+            {
+                name        :   "bhindi masala",
+                calories    :   120,
+                servingSize :   100,
+                protein     :   2,
+                carbs       :   9,
+                fats:    8
+
+            },
+            pandharaRassa : 
+            {
+                name        :   "pandhara rassa",
+                calories    :   260,
+                servingSize :   300,
+                protein     :   16,
+                carbs       :   42,
+                fats:    8
+
+            },
+            rawasCurry : 
+            {
+                name        :   "rawas curry",
+                calories    :   260,
+                servingSize :   113,
+                protein     :   29,
+                carbs       :   15,
+                fats:    15
+
+            },
+            surmaiFry : 
+            {
+                name        :   "surmai masala fry",
+                calories    :   230,
+                servingSize :   120,
+                protein     :   20,
+                carbs       :   20,
+                fats:    9
+
+            },
+
         },
         breads:{
             chapati : 
