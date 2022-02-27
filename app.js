@@ -73,7 +73,7 @@ passport.use(new GoogleStrategy({
 },
 
 function(accessToken, refreshToken, profile, cb) {
-  console.log(profile);
+  //console.log(profile);
   User.findOrCreate({ googleId: profile.id,name:profile.displayName }, function (err, user) {
     return cb(err, user);
   });
@@ -137,6 +137,12 @@ app.post("/register",function(req,res){
   })
   });
 
+  //lesson page
+  app.get("/lessons",function(req,res){
+    res.render("lessons",{login_value:req.isAuthenticated()});
+    
+  });
+
   //Profile get and post both funtions
   app.get("/profile",function(req,res){
     if(req.isAuthenticated()){
@@ -151,7 +157,7 @@ app.post("/register",function(req,res){
 
     //profile post requests for generating prefered meal.
     app.post("/profile",function(req,res){
-      console.log(req.body.gender);
+     // console.log(req.body.gender);
      
       if(req.body.allergens==undefined)
       var allerging=[];
@@ -203,7 +209,7 @@ app.post("/register",function(req,res){
       
       //console.log(bmr);
        //console.log(req.body.allergens);
-       console.log(res.user);
+      // console.log(res.user);
     res.redirect("/profile");
     
     });
@@ -240,7 +246,7 @@ app.get("/tracker",function(req,res){
     var dnon= Math.floor(Math.random() * nonbreadlength);
     var dbread= Math.floor(Math.random() * bbreadlength);
     var bbreaddish=Object.keys(breadobj)[bbread];
-    console.log(breadobj[bbreaddish].calories);
+    //console.log(breadobj[bbreaddish].calories);
     var bnondish=Object.keys(nonbreadobj)[bnon];
     var lbreaddish=Object.keys(breadobj)[lbread];
     var lnondish=Object.keys(nonbreadobj)[lnon];
@@ -267,7 +273,7 @@ app.get("/tracker",function(req,res){
     var dcarbfullfill=parseInt(dservingsizetemp*(breadobj[dbreaddish].carbs+nonbreadobj[dnondish].carbs));
     var dfatfullfill=parseInt(dservingsizetemp*(breadobj[dbreaddish].fats+nonbreadobj[dnondish].fats));
     var dproteinfullfill=parseInt(dservingsizetemp*(breadobj[dbreaddish].protein+nonbreadobj[dnondish].protein));
-    console.log(bbreaddish.calories);
+    //console.log(bbreaddish.calories);
 
     res.render("tracker",{login_value:req.isAuthenticated(),
       bbreadd:breadobj[bbreaddish].name.toUpperCase(),

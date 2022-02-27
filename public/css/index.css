@@ -562,3 +562,24 @@ display: none;
  margin-left: 27%;
 
 }
+.regeneratemealbutton{
+  background-color: white; /* Green */
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  color: black;
+  border-color: #444941;
+  padding: 15px 32px;
+  margin:0rem 2rem 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  align-items: center;
+}
+.regeneratemealbutton:hover
+{
+    background-color:  #5F7A61; /* Green */
+    color: white;
+
+}
